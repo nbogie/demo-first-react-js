@@ -1,14 +1,14 @@
 import episodes from "../data/episodes.json";
 import { Footer } from "./Footer";
 
-function Greeting({ name }) {
-    return <h2>Hello, {name}</h2>;
+function Greeting(props) {
+    return <h2>Hello, {props.name}</h2>;
 }
 
-function Sum({ num1, num2 }) {
+function Sum(props) {
     return (
         <p>
-            {num1} + {num2} = {num1 + num2}
+            {props.num1} + {props.num2}= {props.num1 + props.num2}
         </p>
     );
 }

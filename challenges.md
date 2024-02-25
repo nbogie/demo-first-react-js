@@ -8,6 +8,8 @@
 
 -   Write a component ReverseWord that takes a prop called originalWord and displays the original word and its reversed form.
 
+-   Modify the Sum component to take a third property - "units" or "label" and to show that label after its total. e.g. if the label property is miles, `10 + 2 = 12 miles`.
+
 -   (After making sure all is committed), extract out the components such as Greeting and TVEpisode into separate files - one per component.
 
 -   Make a component that does something conditionally - e.g. shows a hot or cold emoji given a temperature.
