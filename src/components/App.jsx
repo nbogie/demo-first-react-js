@@ -20,14 +20,6 @@ function TVEpisode(props) {
     );
 }
 
-function Footer() {
-    return (
-        <footer>
-            Uses <a href="https://oxal.org/projects/sakura/">Sakura CSS.</a>
-        </footer>
-    );
-}
-
 function MyHeader() {
     return (
         <header>
@@ -43,6 +35,7 @@ export default function App() {
             <Greeting name="Dani" />
             <Greeting name="Bob" />
             <Greeting name="Huss" />
+            <Greeting name="Neill" />
             <Sum num1={100} num2={2010} />
             <Sum num1={39} num2={3} />
             <TVEpisode episodeData={episodes[0]} />
