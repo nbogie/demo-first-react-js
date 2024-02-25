@@ -12,6 +12,6 @@
 
 -   Make a component that does something conditionally - e.g. shows a hot or cold emoji given a temperature.
 
--   Rewrite greeting to take an array of names to greet,displaying a ul populated with one li element per name. (you'll need to use a loop or - harder but much more common - array.map)
+-   Rewrite greeting to take an array of names to greet,displaying a ul populated with one li element per name. (you'll need to use a loop to build up an array prior to the return statement, or - harder but much more common - you can inline an expression based around array.map. )
 
 -   Write an TVEpisodesList component that takes an array of episodes and shows all of them, delegating work to the TVEpisode component to build the HTML for each episode.
