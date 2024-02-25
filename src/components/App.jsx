@@ -1,4 +1,5 @@
 import episodes from "../data/episodes.json";
+import { Footer } from "./Footer";
 
 function Greeting({ name }) {
     return <h2>Hello, {name}</h2>;
