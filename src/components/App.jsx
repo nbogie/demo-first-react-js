@@ -1,23 +1,13 @@
 import episodes from "../data/episodes.json";
 import { Footer } from "./Footer";
-
-function Greeting(props) {
-    return <h2>Hello, {props.name}</h2>;
-}
-
+import { Greeting } from "./Greeting";
+import { TVEpisode } from "./TVEpisode";
+import { Fragment } from "react";
 function Sum(props) {
     return (
         <p>
             {props.num1} + {props.num2}= {props.num1 + props.num2}
         </p>
-    );
-}
-
-function TVEpisode(props) {
-    return (
-        <div>
-            <h2>{props.episodeData.name}</h2>
-        </div>
     );
 }
 
@@ -30,18 +20,27 @@ function MyHeader() {
 }
 
 export default function App() {
+    return <div>Hello app</div>;
+}
+
+export function Demo1() {
     return (
-        <div>
+        <Fragment>
             <MyHeader />
-            <Greeting name="Dani" />
-            <Greeting name="Bob" />
-            <Greeting name="Huss" />
-            <Greeting name="Neill" />
+
+            <Greeting names={["dani", "bob", "ross", "huss"]} />
+            <Greeting names={["a", "b", "c"]} />
             <Sum num1={100} num2={2010} />
             <Sum num1={39} num2={3} />
-            <TVEpisode episodeData={episodes[0]} />
-            <TVEpisode episodeData={episodes[1]} />
+            <div className="episodesList">
+                <TVEpisode episodeData={episodes[0]} />
+                <TVEpisode episodeData={episodes[1]} />
+                <TVEpisode episodeData={episodes[0]} />
+                <TVEpisode episodeData={episodes[1]} />
+                <TVEpisode episodeData={episodes[0]} />
+                <TVEpisode episodeData={episodes[1]} />
+            </div>
             <Footer />
-        </div>
+        </Fragment>
     );
 }

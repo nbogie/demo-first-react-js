@@ -5,3 +5,18 @@
 .weird {
     border: 4px dashed lime;
 }
+
+.episode {
+    border-radius: 1rem;
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.episodesList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: rows;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
